@@ -1,0 +1,149 @@
+/* SPDX-License-Identifier: GPL-2.0+ */
+/*
+ * u41.ld.in - one linker script for all three images.
+ *
+ * Run through the C preprocessor by the Makefile with U41_LD_ORIGIN,
+ * U41_LD_LENGTH and optionally U41_LD_IMAGE_HEADER set, producing
+ * boot.ld, app_a.ld and app_b.ld.  Keeping it as a single source means the
+ * A and B builds cannot drift apart, which would be a nasty way to discover
+ * that only one of them boots.
+ *
+ * Addresses come from include/u41_layout.h and are passed in by the Makefile
+ * so the two files cannot disagree.
+ */
+
+MEMORY
+{
+	FLASH (rx)  : ORIGIN = U41_LD_ORIGIN, LENGTH = U41_LD_LENGTH
+	RAM   (rwx) : ORIGIN = 0x20000000,    LENGTH = 8K
+}
+
+/* Full descending stack from the top of SRAM. */
+_estack = ORIGIN(RAM) + LENGTH(RAM);
+
+/* Minimum free space that must remain between .bss and the stack. */
+_min_stack_size = 1K;
+
+ENTRY(Reset_Handler)
+
+SECTIONS
+{
+	/*
+	 * Vector table first.  ARMv6-M only implements VTOR[31:8], so the
+	 * table has to sit on a 256-byte boundary; both slot bases in
+	 * u41_layout.h satisfy that.
+	 */
+	.isr_vector ORIGIN(FLASH) :
+	{
+		. = ALIGN(4);
+		KEEP(*(.isr_vector))
+		. = ALIGN(4);
+	} > FLASH
+
+#ifdef U41_LD_IMAGE_HEADER
+	/*
+	 * Image header at a fixed offset the bootloader can find without
+	 * parsing anything.  0x100 clears the 192-byte vector table and lands
+	 * on the next VTOR-legal boundary.
+	 */
+	.image_header ORIGIN(FLASH) + U41_LD_IMAGE_HEADER :
+	{
+		KEEP(*(.image_header))
+	} > FLASH
+#endif
+
+	.text :
+	{
+		. = ALIGN(4);
+		*(.text)
+		*(.text*)
+		*(.glue_7)
+		*(.glue_7t)
+		*(.eh_frame)
+		. = ALIGN(4);
+	} > FLASH
+
+	.rodata :
+	{
+		. = ALIGN(4);
+		*(.rodata)
+		*(.rodata*)
+		. = ALIGN(4);
+	} > FLASH
+
+	.ARM.extab : { *(.ARM.extab* .gnu.linkonce.armextab.*) } > FLASH
+	.ARM       : {
+		__exidx_start = .;
+		*(.ARM.exidx*)
+		__exidx_end = .;
+	} > FLASH
+
+	/*
+	 * .ramfunc: the flash driver, copied to SRAM by Reset_Handler.
+	 *
+	 * This is not an optimisation.  RM0377 3.3.1 says a program or erase
+	 * stalls every NVM read on this single-bank part, and instruction
+	 * fetch is a read, so an erase loop running from flash would stall
+	 * fetching its own next instruction.  These functions must be in RAM
+	 * or the device hangs the first time it tries to update itself.
+	 */
+	_siramfunc = LOADADDR(.ramfunc);
+	.ramfunc :
+	{
+		. = ALIGN(4);
+		_sramfunc = .;
+		*(.ramfunc)
+		*(.ramfunc*)
+		. = ALIGN(4);
+		_eramfunc = .;
+	} > RAM AT > FLASH
+
+	_sidata = LOADADDR(.data);
+	.data :
+	{
+		. = ALIGN(4);
+		_sdata = .;
+		*(.data)
+		*(.data*)
+		. = ALIGN(4);
+		_edata = .;
+	} > RAM AT > FLASH
+
+	.bss :
+	{
+		. = ALIGN(4);
+		_sbss = .;
+		__bss_start__ = _sbss;
+		*(.bss)
+		*(.bss*)
+		*(COMMON)
+		. = ALIGN(4);
+		_ebss = .;
+		__bss_end__ = _ebss;
+	} > RAM
+
+	/* Fail the link rather than discover a stack/bss collision at runtime. */
+	._user_heap_stack :
+	{
+		. = ALIGN(8);
+		. = . + _min_stack_size;
+		. = ALIGN(8);
+	} > RAM
+
+	/DISCARD/ :
+	{
+		/*
+		 * With LIBC=musl or LIBC=our we supply memcpy/memset ourselves
+		 * and want no newlib at all, so libc.a is discarded.  With
+		 * LIBC=new the toolchain's newlib provides those two functions,
+		 * so U41_KEEP_LIBC is defined and libc.a is left linkable.
+		 */
+#ifndef U41_KEEP_LIBC
+		libc.a ( * )
+#endif
+		libm.a ( * )
+		libgcc.a ( * )
+	}
+
+	.ARM.attributes 0 : { *(.ARM.attributes) }
+}

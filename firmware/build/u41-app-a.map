@@ -1,0 +1,1084 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                              build/app_a/app/pm.o (__gnu_thumb1_case_uqi)
+/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                              build/app_a/app/main.o (__gnu_thumb1_case_shi)
+/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                              build/app_a/app/pm.o (__aeabi_uidiv)
+/usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+                              build/app_a/common/meta.o (memset)
+/usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+                              build/app_a/common/meta.o (memcpy)
+
+Merging object attributes
+
+
+Discarded input sections
+
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/startup.o
+ .text          0x00000000        0x0 build/app_a/common/startup.o
+ .data          0x00000000        0x0 build/app_a/common/startup.o
+ .bss           0x00000000        0x0 build/app_a/common/startup.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/sys.o
+ .text          0x00000000        0x0 build/app_a/common/sys.o
+ .data          0x00000000        0x0 build/app_a/common/sys.o
+ .bss           0x00000000        0x0 build/app_a/common/sys.o
+ .text.u41_delay_ms
+                0x00000000       0x18 build/app_a/common/sys.o
+ .debug_macro   0x00000000      0xade build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x22 build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x8e build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x51 build/app_a/common/sys.o
+ .debug_macro   0x00000000      0x103 build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x6a build/app_a/common/sys.o
+ .debug_macro   0x00000000      0x1df build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x2e build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x28 build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x2e build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x10 build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x2e build/app_a/common/sys.o
+ .debug_macro   0x00000000       0xb4 build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x28 build/app_a/common/sys.o
+ .debug_macro   0x00000000      0x4e9 build/app_a/common/sys.o
+ .debug_macro   0x00000000      0x11f build/app_a/common/sys.o
+ .debug_macro   0x00000000     0x8478 build/app_a/common/sys.o
+ .debug_macro   0x00000000       0x66 build/app_a/common/sys.o
+ .group         0x00000000        0xc build/app_a/common/crc32.o
+ .group         0x00000000        0xc build/app_a/common/crc32.o
+ .group         0x00000000        0xc build/app_a/common/crc32.o
+ .group         0x00000000        0xc build/app_a/common/crc32.o
+ .group         0x00000000        0xc build/app_a/common/crc32.o
+ .group         0x00000000        0xc build/app_a/common/crc32.o
+ .group         0x00000000        0xc build/app_a/common/crc32.o
+ .group         0x00000000        0xc build/app_a/common/crc32.o
+ .text          0x00000000        0x0 build/app_a/common/crc32.o
+ .data          0x00000000        0x0 build/app_a/common/crc32.o
+ .bss           0x00000000        0x0 build/app_a/common/crc32.o
+ .debug_macro   0x00000000      0xade build/app_a/common/crc32.o
+ .debug_macro   0x00000000       0x22 build/app_a/common/crc32.o
+ .debug_macro   0x00000000       0x8e build/app_a/common/crc32.o
+ .debug_macro   0x00000000       0x51 build/app_a/common/crc32.o
+ .debug_macro   0x00000000      0x103 build/app_a/common/crc32.o
+ .debug_macro   0x00000000       0x6a build/app_a/common/crc32.o
+ .debug_macro   0x00000000      0x1df build/app_a/common/crc32.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/flash.o
+ .text          0x00000000        0x0 build/app_a/common/flash.o
+ .data          0x00000000        0x0 build/app_a/common/flash.o
+ .bss           0x00000000        0x0 build/app_a/common/flash.o
+ .text.u41_flash_is_erased
+                0x00000000       0x16 build/app_a/common/flash.o
+ .debug_macro   0x00000000      0xade build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x22 build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x8e build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x51 build/app_a/common/flash.o
+ .debug_macro   0x00000000      0x103 build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x6a build/app_a/common/flash.o
+ .debug_macro   0x00000000      0x1df build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x2e build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x28 build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x2e build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x10 build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x2e build/app_a/common/flash.o
+ .debug_macro   0x00000000       0xb4 build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x28 build/app_a/common/flash.o
+ .debug_macro   0x00000000      0x4e9 build/app_a/common/flash.o
+ .debug_macro   0x00000000      0x11f build/app_a/common/flash.o
+ .debug_macro   0x00000000     0x8478 build/app_a/common/flash.o
+ .debug_macro   0x00000000       0x66 build/app_a/common/flash.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/common/meta.o
+ .text          0x00000000        0x0 build/app_a/common/meta.o
+ .data          0x00000000        0x0 build/app_a/common/meta.o
+ .bss           0x00000000        0x0 build/app_a/common/meta.o
+ .debug_macro   0x00000000      0xade build/app_a/common/meta.o
+ .debug_macro   0x00000000       0x22 build/app_a/common/meta.o
+ .debug_macro   0x00000000      0x103 build/app_a/common/meta.o
+ .debug_macro   0x00000000       0x6a build/app_a/common/meta.o
+ .debug_macro   0x00000000      0x1df build/app_a/common/meta.o
+ .debug_macro   0x00000000       0xb8 build/app_a/common/meta.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/main.o
+ .text          0x00000000        0x0 build/app_a/app/main.o
+ .data          0x00000000        0x0 build/app_a/app/main.o
+ .bss           0x00000000        0x0 build/app_a/app/main.o
+ .debug_macro   0x00000000      0xade build/app_a/app/main.o
+ .debug_macro   0x00000000       0x22 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x6e build/app_a/app/main.o
+ .debug_macro   0x00000000       0x24 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x94 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x3c build/app_a/app/main.o
+ .debug_macro   0x00000000       0x34 build/app_a/app/main.o
+ .debug_macro   0x00000000      0x190 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x57 build/app_a/app/main.o
+ .debug_macro   0x00000000      0x364 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x16 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x4a build/app_a/app/main.o
+ .debug_macro   0x00000000       0x34 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x58 build/app_a/app/main.o
+ .debug_macro   0x00000000      0x1de build/app_a/app/main.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x3c build/app_a/app/main.o
+ .debug_macro   0x00000000       0x2e build/app_a/app/main.o
+ .debug_macro   0x00000000       0x28 build/app_a/app/main.o
+ .debug_macro   0x00000000      0x103 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x6a build/app_a/app/main.o
+ .debug_macro   0x00000000      0x1df build/app_a/app/main.o
+ .debug_macro   0x00000000       0x2e build/app_a/app/main.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x2e build/app_a/app/main.o
+ .debug_macro   0x00000000       0xb4 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x28 build/app_a/app/main.o
+ .debug_macro   0x00000000      0x4e9 build/app_a/app/main.o
+ .debug_macro   0x00000000      0x11f build/app_a/app/main.o
+ .debug_macro   0x00000000     0x8478 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x66 build/app_a/app/main.o
+ .debug_macro   0x00000000       0xb8 build/app_a/app/main.o
+ .debug_macro   0x00000000       0x1c build/app_a/app/main.o
+ .debug_macro   0x00000000       0x77 build/app_a/app/main.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/pm.o
+ .text          0x00000000        0x0 build/app_a/app/pm.o
+ .data          0x00000000        0x0 build/app_a/app/pm.o
+ .bss           0x00000000        0x0 build/app_a/app/pm.o
+ .text.u41_pm_state
+                0x00000000        0xc build/app_a/app/pm.o
+ .debug_macro   0x00000000      0xade build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x22 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x6e build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x24 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x94 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x3c build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x34 build/app_a/app/pm.o
+ .debug_macro   0x00000000      0x190 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x57 build/app_a/app/pm.o
+ .debug_macro   0x00000000      0x364 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x16 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x4a build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x34 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x58 build/app_a/app/pm.o
+ .debug_macro   0x00000000      0x1de build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x3c build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x2e build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x28 build/app_a/app/pm.o
+ .debug_macro   0x00000000      0x103 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x6a build/app_a/app/pm.o
+ .debug_macro   0x00000000      0x1df build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x2e build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x2e build/app_a/app/pm.o
+ .debug_macro   0x00000000       0xb4 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x28 build/app_a/app/pm.o
+ .debug_macro   0x00000000      0x4e9 build/app_a/app/pm.o
+ .debug_macro   0x00000000      0x11f build/app_a/app/pm.o
+ .debug_macro   0x00000000     0x8478 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x66 build/app_a/app/pm.o
+ .debug_macro   0x00000000      0x13f build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x77 build/app_a/app/pm.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/pm.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/spi_slave.o
+ .text          0x00000000        0x0 build/app_a/app/spi_slave.o
+ .data          0x00000000        0x0 build/app_a/app/spi_slave.o
+ .bss           0x00000000        0x0 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000      0xade build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x22 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x6e build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x24 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x94 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x3c build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x34 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000      0x190 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x57 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000      0x364 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x16 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x4a build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x34 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x58 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000      0x1de build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x3c build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x2e build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x28 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000      0x103 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x6a build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000      0x1df build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x2e build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x2e build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0xb4 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x28 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000      0x4e9 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000      0x11f build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000     0x8478 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x66 build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000      0x13f build/app_a/app/spi_slave.o
+ .debug_macro   0x00000000       0x77 build/app_a/app/spi_slave.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .group         0x00000000        0xc build/app_a/app/ota.o
+ .text          0x00000000        0x0 build/app_a/app/ota.o
+ .data          0x00000000        0x0 build/app_a/app/ota.o
+ .bss           0x00000000        0x0 build/app_a/app/ota.o
+ .debug_macro   0x00000000      0xade build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x22 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x6e build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x24 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x94 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x3c build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x34 build/app_a/app/ota.o
+ .debug_macro   0x00000000      0x190 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x57 build/app_a/app/ota.o
+ .debug_macro   0x00000000      0x364 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x16 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x4a build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x34 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x58 build/app_a/app/ota.o
+ .debug_macro   0x00000000      0x1de build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x10 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x3c build/app_a/app/ota.o
+ .debug_macro   0x00000000      0x103 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x6a build/app_a/app/ota.o
+ .debug_macro   0x00000000      0x1df build/app_a/app/ota.o
+ .debug_macro   0x00000000       0xb8 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x1c build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x77 build/app_a/app/ota.o
+ .debug_macro   0x00000000       0x58 build/app_a/app/ota.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .text          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08001000         0x00003800         xr
+RAM              0x20000000         0x00002000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD build/app_a/common/startup.o
+LOAD build/app_a/common/sys.o
+LOAD build/app_a/common/crc32.o
+LOAD build/app_a/common/flash.o
+LOAD build/app_a/common/meta.o
+LOAD build/app_a/app/main.o
+LOAD build/app_a/app/pm.o
+LOAD build/app_a/app/spi_slave.o
+LOAD build/app_a/app/ota.o
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
+                0x20002000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000400                        _min_stack_size = 0x400
+
+.isr_vector     0x08001000       0xc0
+                0x08001000                        . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08001000       0xc0 build/app_a/common/startup.o
+                0x08001000                g_vectors
+                0x080010c0                        . = ALIGN (0x4)
+
+.image_header   0x08001100       0x20
+ *(.image_header)
+ .image_header  0x08001100       0x20 build/app_a/app/main.o
+                0x08001100                g_image_hdr
+
+.text           0x08001120     0x1690
+                0x08001120                        . = ALIGN (0x4)
+ *(.text)
+ .text          0x08001120       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                0x08001120                __gnu_thumb1_case_uqi
+ .text          0x08001134       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                0x08001134                __gnu_thumb1_case_shi
+ .text          0x08001148       0x8c /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x08001148                __udivsi3
+                0x08001148                __aeabi_uidiv
+                0x080011c0                __aeabi_uidivmod
+ .text          0x080011d4        0x4 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x080011d4                __aeabi_ldiv0
+                0x080011d4                __aeabi_idiv0
+ *(.text*)
+ .text.Default_Handler
+                0x080011d8        0x4 build/app_a/common/startup.o
+                0x080011d8                HardFault_Handler
+                0x080011d8                PendSV_Handler
+                0x080011d8                NMI_Handler
+                0x080011d8                Default_Handler
+                0x080011d8                SVC_Handler
+ .text.Reset_Handler
+                0x080011dc       0x68 build/app_a/common/startup.o
+                0x080011dc                Reset_Handler
+ .text.u41_sys_clock_init
+                0x08001244       0x70 build/app_a/common/sys.o
+                0x08001244                u41_sys_clock_init
+ .text.u41_reset_cause
+                0x080012b4        0xc build/app_a/common/sys.o
+                0x080012b4                u41_reset_cause
+ .text.u41_tick_init
+                0x080012c0       0x38 build/app_a/common/sys.o
+                0x080012c0                u41_tick_init
+ .text.SysTick_Handler
+                0x080012f8       0x10 build/app_a/common/sys.o
+                0x080012f8                SysTick_Handler
+ .text.u41_millis
+                0x08001308        0xc build/app_a/common/sys.o
+                0x08001308                u41_millis
+ .text.u41_iwdg_start
+                0x08001314       0x70 build/app_a/common/sys.o
+                0x08001314                u41_iwdg_start
+ .text.u41_iwdg_feed
+                0x08001384       0x10 build/app_a/common/sys.o
+                0x08001384                u41_iwdg_feed
+ .text.u41_crc32_update
+                0x08001394       0x30 build/app_a/common/crc32.o
+                0x08001394                u41_crc32_update
+ .text.u41_crc32_final
+                0x080013c4        0x4 build/app_a/common/crc32.o
+                0x080013c4                u41_crc32_final
+ .text.u41_crc32
+                0x080013c8       0x12 build/app_a/common/crc32.o
+                0x080013c8                u41_crc32
+ *fill*         0x080013da        0x2 
+ .text.u41_flash_unlock
+                0x080013dc       0x50 build/app_a/common/flash.o
+                0x080013dc                u41_flash_unlock
+ .text.u41_flash_lock
+                0x0800142c       0x18 build/app_a/common/flash.o
+                0x0800142c                u41_flash_lock
+ .text.u41_flash_erase_page
+                0x08001444       0x34 build/app_a/common/flash.o
+                0x08001444                u41_flash_erase_page
+ .text.u41_flash_program_halfpage
+                0x08001478       0x40 build/app_a/common/flash.o
+                0x08001478                u41_flash_program_halfpage
+ .text.u41_flash_program_words
+                0x080014b8       0x6c build/app_a/common/flash.o
+                0x080014b8                u41_flash_program_words
+ .text.u41_eeprom_write_word
+                0x08001524       0x4c build/app_a/common/flash.o
+                0x08001524                u41_eeprom_write_word
+ .text.u41_eeprom_write
+                0x08001570       0x32 build/app_a/common/flash.o
+                0x08001570                u41_eeprom_write
+ *fill*         0x080015a2        0x2 
+ .text.meta_valid
+                0x080015a4       0x6c build/app_a/common/meta.o
+ .text.u41_meta_defaults
+                0x08001610       0x54 build/app_a/common/meta.o
+                0x08001610                u41_meta_defaults
+ .text.u41_meta_load
+                0x08001664       0x6c build/app_a/common/meta.o
+                0x08001664                u41_meta_load
+ .text.u41_meta_store
+                0x080016d0       0xd8 build/app_a/common/meta.o
+                0x080016d0                u41_meta_store
+ .text.get_le32
+                0x080017a8       0x16 build/app_a/app/main.o
+ *fill*         0x080017be        0x2 
+ .text.startup.main
+                0x080017c0      0x1c4 build/app_a/app/main.o
+                0x080017c0                main
+ .text.adc_read
+                0x08001984       0x30 build/app_a/app/pm.o
+ .text.rails_all_off
+                0x080019b4       0x28 build/app_a/app/pm.o
+ .text.in_state_ms
+                0x080019dc       0x14 build/app_a/app/pm.o
+ .text.enter    0x080019f0       0x18 build/app_a/app/pm.o
+ .text.adc_sample
+                0x08001a08       0xb8 build/app_a/app/pm.o
+ .text.u41_pm_init
+                0x08001ac0      0x184 build/app_a/app/pm.o
+                0x08001ac0                u41_pm_init
+ .text.u41_pm_poll
+                0x08001c44      0x218 build/app_a/app/pm.o
+                0x08001c44                u41_pm_poll
+ .text.u41_pm_status
+                0x08001e5c       0x98 build/app_a/app/pm.o
+                0x08001e5c                u41_pm_status
+ .text.u41_pm_set_rail
+                0x08001ef4       0x58 build/app_a/app/pm.o
+                0x08001ef4                u41_pm_set_rail
+ .text.u41_pm_keepalive
+                0x08001f4c       0x1c build/app_a/app/pm.o
+                0x08001f4c                u41_pm_keepalive
+ .text.u41_pm_flash_window_open
+                0x08001f68       0x10 build/app_a/app/pm.o
+                0x08001f68                u41_pm_flash_window_open
+ .text.u41_spi_init
+                0x08001f78      0x13c build/app_a/app/spi_slave.o
+                0x08001f78                u41_spi_init
+ .text.SPI1_IRQHandler
+                0x080020b4       0x74 build/app_a/app/spi_slave.o
+                0x080020b4                SPI1_IRQHandler
+ .text.u41_spi_reply
+                0x08002128       0x84 build/app_a/app/spi_slave.o
+                0x08002128                u41_spi_reply
+ .text.u41_spi_reply_status
+                0x080021ac        0xc build/app_a/app/spi_slave.o
+                0x080021ac                u41_spi_reply_status
+ .text.u41_spi_poll
+                0x080021b8       0xd0 build/app_a/app/spi_slave.o
+                0x080021b8                u41_spi_poll
+ .text.ota_reset
+                0x08002288       0x2c build/app_a/app/ota.o
+ .text.u41_ota_init
+                0x080022b4       0x30 build/app_a/app/ota.o
+                0x080022b4                u41_ota_init
+ .text.u41_ota_meta
+                0x080022e4        0x8 build/app_a/app/ota.o
+                0x080022e4                u41_ota_meta
+ .text.u41_ota_poll
+                0x080022ec       0x6c build/app_a/app/ota.o
+                0x080022ec                u41_ota_poll
+ .text.u41_ota_begin
+                0x08002358       0x6c build/app_a/app/ota.o
+                0x08002358                u41_ota_begin
+ .text.u41_ota_data
+                0x080023c4       0xcc build/app_a/app/ota.o
+                0x080023c4                u41_ota_data
+ .text.u41_ota_end
+                0x08002490       0xec build/app_a/app/ota.o
+                0x08002490                u41_ota_end
+ .text.u41_ota_abort
+                0x0800257c       0x30 build/app_a/app/ota.o
+                0x0800257c                u41_ota_abort
+ .text.u41_ota_status
+                0x080025ac       0xa4 build/app_a/app/ota.o
+                0x080025ac                u41_ota_status
+ .text.u41_ota_confirm
+                0x08002650       0x20 build/app_a/app/ota.o
+                0x08002650                u41_ota_confirm
+ .text.memset   0x08002670       0x90 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+                0x08002670                memset
+ .text.memcpy   0x08002700       0xb0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+                0x08002700                memcpy
+ *(.glue_7)
+ .glue_7        0x080027b0        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x080027b0        0x0 linker stubs
+ *(.eh_frame)
+                0x080027b0                        . = ALIGN (0x4)
+
+.vfp11_veneer   0x080027b0        0x0
+ .vfp11_veneer  0x080027b0        0x0 linker stubs
+
+.v4_bx          0x080027b0        0x0
+ .v4_bx         0x080027b0        0x0 linker stubs
+
+.iplt           0x080027b0        0x0
+ .iplt          0x080027b0        0x0 build/app_a/common/startup.o
+
+.rodata         0x080027b0       0x40
+                0x080027b0                        . = ALIGN (0x4)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.crc32_nibble
+                0x080027b0       0x40 build/app_a/common/crc32.o
+                0x080027f0                        . = ALIGN (0x4)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x080027f0        0x0
+                0x080027f0                        __exidx_start = .
+ *(.ARM.exidx*)
+                0x080027f0                        __exidx_end = .
+                0x080027f0                        _siramfunc = LOADADDR (.ramfunc)
+
+.ramfunc        0x20000000       0xd8 load address 0x080027f0
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _sramfunc = .
+ *(.ramfunc)
+ .ramfunc       0x20000000       0xd8 build/app_a/common/flash.o
+ *(.ramfunc*)
+                0x200000d8                        . = ALIGN (0x4)
+                0x200000d8                        _eramfunc = .
+                0x080028c8                        _sidata = LOADADDR (.data)
+
+.rel.dyn        0x200000d8        0x0 load address 0x080028c8
+ .rel.iplt      0x200000d8        0x0 build/app_a/common/startup.o
+
+.data           0x200000d8        0x4 load address 0x080028c8
+                0x200000d8                        . = ALIGN (0x4)
+                0x200000d8                        _sdata = .
+ *(.data)
+ *(.data*)
+ .data.SystemCoreClock
+                0x200000d8        0x4 build/app_a/common/sys.o
+                0x200000d8                SystemCoreClock
+                0x200000dc                        . = ALIGN (0x4)
+                0x200000dc                        _edata = .
+
+.igot.plt       0x200000dc        0x0 load address 0x080028cc
+ .igot.plt      0x200000dc        0x0 build/app_a/common/startup.o
+
+.bss            0x200000dc      0x200 load address 0x080028cc
+                0x200000dc                        . = ALIGN (0x4)
+                0x200000dc                        _sbss = .
+                0x200000dc                        __bss_start__ = _sbss
+ *(.bss)
+ *(.bss*)
+ .bss.s_reset_cause
+                0x200000dc        0x4 build/app_a/common/sys.o
+ .bss.s_millis  0x200000e0        0x4 build/app_a/common/sys.o
+ .bss.rx        0x200000e4       0x50 build/app_a/app/main.o
+ .bss.pm        0x20000134       0x2c build/app_a/app/pm.o
+ .bss.work      0x20000160       0x50 build/app_a/app/spi_slave.o
+ .bss.nss_was_low
+                0x200001b0        0x1 build/app_a/app/spi_slave.o
+ .bss.frame_ready
+                0x200001b1        0x1 build/app_a/app/spi_slave.o
+ .bss.tx_pos    0x200001b2        0x2 build/app_a/app/spi_slave.o
+ .bss.rx_len    0x200001b4        0x2 build/app_a/app/spi_slave.o
+ .bss.tx_buf    0x200001b6       0x50 build/app_a/app/spi_slave.o
+ .bss.rx_buf    0x20000206       0x50 build/app_a/app/spi_slave.o
+ *fill*         0x20000256        0x2 
+ .bss.chunk.0   0x20000258       0x40 build/app_a/app/ota.o
+ .bss.ota       0x20000298       0x44 build/app_a/app/ota.o
+ *(COMMON)
+                0x200002dc                        . = ALIGN (0x4)
+                0x200002dc                        _ebss = .
+                0x200002dc                        __bss_end__ = _ebss
+
+._user_heap_stack
+                0x200002dc      0x404 load address 0x080028cc
+                0x200002e0                        . = ALIGN (0x8)
+ *fill*         0x200002dc        0x4 
+                0x200006e0                        . = (. + _min_stack_size)
+ *fill*         0x200002e0      0x400 
+                0x200006e0                        . = ALIGN (0x8)
+
+/DISCARD/
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x00000000       0x2c
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x2c build/app_a/common/startup.o
+ .ARM.attributes
+                0x0000002c       0x2c build/app_a/common/sys.o
+ .ARM.attributes
+                0x00000058       0x2c build/app_a/common/crc32.o
+ .ARM.attributes
+                0x00000084       0x2c build/app_a/common/flash.o
+ .ARM.attributes
+                0x000000b0       0x2c build/app_a/common/meta.o
+ .ARM.attributes
+                0x000000dc       0x2c build/app_a/app/main.o
+ .ARM.attributes
+                0x00000108       0x2c build/app_a/app/pm.o
+ .ARM.attributes
+                0x00000134       0x2c build/app_a/app/spi_slave.o
+ .ARM.attributes
+                0x00000160       0x2c build/app_a/app/ota.o
+ .ARM.attributes
+                0x0000018c       0x1e /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .ARM.attributes
+                0x000001aa       0x1e /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .ARM.attributes
+                0x000001c8       0x1e /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000001e6       0x1e /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000204       0x2c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .ARM.attributes
+                0x00000230       0x2c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+OUTPUT(build/u41-app-a.elf elf32-littlearm)
+LOAD linker stubs
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
+LOAD /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a
+
+.debug_info     0x00000000     0x538c
+ .debug_info    0x00000000      0x224 build/app_a/common/startup.o
+ .debug_info    0x00000224      0x757 build/app_a/common/sys.o
+ .debug_info    0x0000097b      0x209 build/app_a/common/crc32.o
+ .debug_info    0x00000b84      0x7f2 build/app_a/common/flash.o
+ .debug_info    0x00001376      0x5f9 build/app_a/common/meta.o
+ .debug_info    0x0000196f      0xac6 build/app_a/app/main.o
+ .debug_info    0x00002435     0x1160 build/app_a/app/pm.o
+ .debug_info    0x00003595     0x1084 build/app_a/app/spi_slave.o
+ .debug_info    0x00004619      0xa07 build/app_a/app/ota.o
+ .debug_info    0x00005020       0x31 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_info    0x00005051       0x31 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .debug_info    0x00005082       0x3d /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_info    0x000050bf       0x3c /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000050fb      0x13a /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .debug_info    0x00005235      0x157 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+
+.debug_abbrev   0x00000000     0x1acf
+ .debug_abbrev  0x00000000      0x14c build/app_a/common/startup.o
+ .debug_abbrev  0x0000014c      0x2aa build/app_a/common/sys.o
+ .debug_abbrev  0x000003f6      0x13d build/app_a/common/crc32.o
+ .debug_abbrev  0x00000533      0x31e build/app_a/common/flash.o
+ .debug_abbrev  0x00000851      0x279 build/app_a/common/meta.o
+ .debug_abbrev  0x00000aca      0x27e build/app_a/app/main.o
+ .debug_abbrev  0x00000d48      0x4ad build/app_a/app/pm.o
+ .debug_abbrev  0x000011f5      0x3aa build/app_a/app/spi_slave.o
+ .debug_abbrev  0x0000159f      0x305 build/app_a/app/ota.o
+ .debug_abbrev  0x000018a4       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_abbrev  0x000018cc       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .debug_abbrev  0x000018f4       0x28 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x0000191c       0x26 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00001942       0xbd /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .debug_abbrev  0x000019ff       0xd0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+
+.debug_loclists
+                0x00000000     0x1b3a
+ .debug_loclists
+                0x00000000       0x5e build/app_a/common/startup.o
+ .debug_loclists
+                0x0000005e      0x117 build/app_a/common/sys.o
+ .debug_loclists
+                0x00000175      0x11a build/app_a/common/crc32.o
+ .debug_loclists
+                0x0000028f      0x528 build/app_a/common/flash.o
+ .debug_loclists
+                0x000007b7      0x153 build/app_a/common/meta.o
+ .debug_loclists
+                0x0000090a      0x16c build/app_a/app/main.o
+ .debug_loclists
+                0x00000a76      0x61e build/app_a/app/pm.o
+ .debug_loclists
+                0x00001094      0x40c build/app_a/app/spi_slave.o
+ .debug_loclists
+                0x000014a0      0x27e build/app_a/app/ota.o
+ .debug_loclists
+                0x0000171e      0x175 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .debug_loclists
+                0x00001893      0x2a7 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+
+.debug_aranges  0x00000000      0x368
+ .debug_aranges
+                0x00000000       0x28 build/app_a/common/startup.o
+ .debug_aranges
+                0x00000028       0x58 build/app_a/common/sys.o
+ .debug_aranges
+                0x00000080       0x30 build/app_a/common/crc32.o
+ .debug_aranges
+                0x000000b0       0x78 build/app_a/common/flash.o
+ .debug_aranges
+                0x00000128       0x38 build/app_a/common/meta.o
+ .debug_aranges
+                0x00000160       0x28 build/app_a/app/main.o
+ .debug_aranges
+                0x00000188       0x78 build/app_a/app/pm.o
+ .debug_aranges
+                0x00000200       0x40 build/app_a/app/spi_slave.o
+ .debug_aranges
+                0x00000240       0x68 build/app_a/app/ota.o
+ .debug_aranges
+                0x000002a8       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_aranges
+                0x000002c8       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .debug_aranges
+                0x000002e8       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x00000308       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x00000328       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .debug_aranges
+                0x00000348       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+
+.debug_rnglists
+                0x00000000      0x3ce
+ .debug_rnglists
+                0x00000000       0x19 build/app_a/common/startup.o
+ .debug_rnglists
+                0x00000019       0x5e build/app_a/common/sys.o
+ .debug_rnglists
+                0x00000077       0x2b build/app_a/common/crc32.o
+ .debug_rnglists
+                0x000000a2       0x55 build/app_a/common/flash.o
+ .debug_rnglists
+                0x000000f7       0x32 build/app_a/common/meta.o
+ .debug_rnglists
+                0x00000129       0x42 build/app_a/app/main.o
+ .debug_rnglists
+                0x0000016b      0x140 build/app_a/app/pm.o
+ .debug_rnglists
+                0x000002ab       0x94 build/app_a/app/spi_slave.o
+ .debug_rnglists
+                0x0000033f       0x67 build/app_a/app/ota.o
+ .debug_rnglists
+                0x000003a6       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .debug_rnglists
+                0x000003ba       0x14 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+
+.debug_macro    0x00000000     0xb53f
+ .debug_macro   0x00000000       0xdd build/app_a/common/startup.o
+ .debug_macro   0x000000dd      0xade build/app_a/common/startup.o
+ .debug_macro   0x00000bbb       0x22 build/app_a/common/startup.o
+ .debug_macro   0x00000bdd       0x8e build/app_a/common/startup.o
+ .debug_macro   0x00000c6b       0x51 build/app_a/common/startup.o
+ .debug_macro   0x00000cbc      0x103 build/app_a/common/startup.o
+ .debug_macro   0x00000dbf       0x6a build/app_a/common/startup.o
+ .debug_macro   0x00000e29      0x1df build/app_a/common/startup.o
+ .debug_macro   0x00001008       0x2e build/app_a/common/startup.o
+ .debug_macro   0x00001036       0x28 build/app_a/common/startup.o
+ .debug_macro   0x0000105e       0x2e build/app_a/common/startup.o
+ .debug_macro   0x0000108c       0x10 build/app_a/common/startup.o
+ .debug_macro   0x0000109c       0x2e build/app_a/common/startup.o
+ .debug_macro   0x000010ca       0xb4 build/app_a/common/startup.o
+ .debug_macro   0x0000117e       0x28 build/app_a/common/startup.o
+ .debug_macro   0x000011a6      0x4e9 build/app_a/common/startup.o
+ .debug_macro   0x0000168f      0x11f build/app_a/common/startup.o
+ .debug_macro   0x000017ae     0x8478 build/app_a/common/startup.o
+ .debug_macro   0x00009c26       0x66 build/app_a/common/startup.o
+ .debug_macro   0x00009c8c       0xed build/app_a/common/sys.o
+ .debug_macro   0x00009d79       0x72 build/app_a/common/crc32.o
+ .debug_macro   0x00009deb       0x71 build/app_a/common/crc32.o
+ .debug_macro   0x00009e5c      0x101 build/app_a/common/flash.o
+ .debug_macro   0x00009f5d       0xb8 build/app_a/common/flash.o
+ .debug_macro   0x0000a015       0x1c build/app_a/common/flash.o
+ .debug_macro   0x0000a031      0x146 build/app_a/common/meta.o
+ .debug_macro   0x0000a177       0x6e build/app_a/common/meta.o
+ .debug_macro   0x0000a1e5       0x24 build/app_a/common/meta.o
+ .debug_macro   0x0000a209       0x94 build/app_a/common/meta.o
+ .debug_macro   0x0000a29d       0x3c build/app_a/common/meta.o
+ .debug_macro   0x0000a2d9       0x34 build/app_a/common/meta.o
+ .debug_macro   0x0000a30d      0x190 build/app_a/common/meta.o
+ .debug_macro   0x0000a49d       0x57 build/app_a/common/meta.o
+ .debug_macro   0x0000a4f4      0x364 build/app_a/common/meta.o
+ .debug_macro   0x0000a858       0x16 build/app_a/common/meta.o
+ .debug_macro   0x0000a86e       0x4a build/app_a/common/meta.o
+ .debug_macro   0x0000a8b8       0x34 build/app_a/common/meta.o
+ .debug_macro   0x0000a8ec       0x10 build/app_a/common/meta.o
+ .debug_macro   0x0000a8fc       0x58 build/app_a/common/meta.o
+ .debug_macro   0x0000a954      0x1de build/app_a/common/meta.o
+ .debug_macro   0x0000ab32       0x10 build/app_a/common/meta.o
+ .debug_macro   0x0000ab42       0x3c build/app_a/common/meta.o
+ .debug_macro   0x0000ab7e       0x1c build/app_a/common/meta.o
+ .debug_macro   0x0000ab9a       0x22 build/app_a/common/meta.o
+ .debug_macro   0x0000abbc       0x77 build/app_a/common/meta.o
+ .debug_macro   0x0000ac33      0x1f8 build/app_a/app/main.o
+ .debug_macro   0x0000ae2b      0x13f build/app_a/app/main.o
+ .debug_macro   0x0000af6a       0x58 build/app_a/app/main.o
+ .debug_macro   0x0000afc2       0x10 build/app_a/app/main.o
+ .debug_macro   0x0000afd2      0x1e2 build/app_a/app/pm.o
+ .debug_macro   0x0000b1b4       0x52 build/app_a/app/pm.o
+ .debug_macro   0x0000b206      0x1b2 build/app_a/app/spi_slave.o
+ .debug_macro   0x0000b3b8      0x165 build/app_a/app/ota.o
+ .debug_macro   0x0000b51d       0x22 build/app_a/app/ota.o
+
+.debug_line     0x00000000     0x406a
+ .debug_line    0x00000000      0x2af build/app_a/common/startup.o
+ .debug_line    0x000002af      0x539 build/app_a/common/sys.o
+ .debug_line    0x000007e8      0x1ee build/app_a/common/crc32.o
+ .debug_line    0x000009d6      0x769 build/app_a/common/flash.o
+ .debug_line    0x0000113f      0x576 build/app_a/common/meta.o
+ .debug_line    0x000016b5      0x505 build/app_a/app/main.o
+ .debug_line    0x00001bba      0xdd4 build/app_a/app/pm.o
+ .debug_line    0x0000298e      0x8a5 build/app_a/app/spi_slave.o
+ .debug_line    0x00003233      0x818 build/app_a/app/ota.o
+ .debug_line    0x00003a4b       0x52 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_line    0x00003a9d       0x53 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .debug_line    0x00003af0       0x61 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_line    0x00003b51       0x4a /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00003b9b      0x23c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .debug_line    0x00003dd7      0x293 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+
+.debug_str      0x00000000    0x3a197
+ .debug_str     0x00000000    0x3a197 build/app_a/common/startup.o
+                              0x354f5 (size before relaxing)
+ .debug_str     0x0003a197        0x0 build/app_a/common/sys.o
+                              0x35866 (size before relaxing)
+ .debug_str     0x0003a197        0x0 build/app_a/common/crc32.o
+                               0x3f13 (size before relaxing)
+ .debug_str     0x0003a197        0x0 build/app_a/common/flash.o
+                              0x35bf0 (size before relaxing)
+ .debug_str     0x0003a197        0x0 build/app_a/common/meta.o
+                               0x7461 (size before relaxing)
+ .debug_str     0x0003a197        0x0 build/app_a/app/main.o
+                              0x394c5 (size before relaxing)
+ .debug_str     0x0003a197        0x0 build/app_a/app/pm.o
+                              0x390f8 (size before relaxing)
+ .debug_str     0x0003a197        0x0 build/app_a/app/spi_slave.o
+                              0x38e4d (size before relaxing)
+ .debug_str     0x0003a197        0x0 build/app_a/app/ota.o
+                               0x789f (size before relaxing)
+ .debug_str     0x0003a197        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                                 0xb4 (size before relaxing)
+ .debug_str     0x0003a197        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                                 0xb4 (size before relaxing)
+ .debug_str     0x0003a197        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                                 0xb9 (size before relaxing)
+ .debug_str     0x0003a197        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                                 0xba (size before relaxing)
+ .debug_str     0x0003a197        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+                                0x1ce (size before relaxing)
+ .debug_str     0x0003a197        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+                                0x1eb (size before relaxing)
+
+.comment        0x00000000       0x3c
+ .comment       0x00000000       0x3c build/app_a/common/startup.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/app_a/common/sys.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/app_a/common/crc32.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/app_a/common/flash.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/app_a/common/meta.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/app_a/app/main.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/app_a/app/pm.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/app_a/app/spi_slave.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 build/app_a/app/ota.o
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+                                 0x1f (size before relaxing)
+ .comment       0x0000003c        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+                                 0x1f (size before relaxing)
+
+.debug_frame    0x00000000      0x694
+ .debug_frame   0x00000000       0x38 build/app_a/common/startup.o
+ .debug_frame   0x00000038       0xa0 build/app_a/common/sys.o
+ .debug_frame   0x000000d8       0x54 build/app_a/common/crc32.o
+ .debug_frame   0x0000012c      0x130 build/app_a/common/flash.o
+ .debug_frame   0x0000025c       0x80 build/app_a/common/meta.o
+ .debug_frame   0x000002dc       0x40 build/app_a/app/main.o
+ .debug_frame   0x0000031c      0x12c build/app_a/app/pm.o
+ .debug_frame   0x00000448       0xa8 build/app_a/app/spi_slave.o
+ .debug_frame   0x000004f0      0x124 build/app_a/app/ota.o
+ .debug_frame   0x00000614       0x20 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000634       0x2c /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memset.o)
+ .debug_frame   0x00000660       0x34 /usr/lib/gcc/arm-none-eabi/16.2.0/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-memcpy-stub.o)
+
+.debug_line_str
+                0x00000000       0x92
+ .debug_line_str
+                0x00000000       0x92 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_line_str
+                0x00000092        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                                 0x92 (size before relaxing)
+ .debug_line_str
+                0x00000092        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                                 0x92 (size before relaxing)
+ .debug_line_str
+                0x00000092        0x0 /usr/lib/gcc/arm-none-eabi/16.2.0/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                                 0x92 (size before relaxing)

@@ -1,0 +1,42 @@
+# SPDX-License-Identifier: GPL-2.0+
+#
+# Confirms a newly adopted U41 image.
+#
+# After a power cycle that adopts an OTA update, the U41 bootloader marks the
+# new slot TRIAL and starts counting boots.  If nothing confirms it within
+# U41_MAX_TRIAL_BOOTS power cycles, the bootloader rolls back to the previous
+# slot.  This service is what stops that happening once the system has come up
+# far enough to prove the new firmware is behaving.
+#
+# It runs unconditionally: confirming when there is nothing on probation is a
+# no-op that returns success, so there is no state to track here.
+#
+# Ordering matters.  Confirm LATE, not early - the whole value of the trial
+# mechanism is that it only clears once the system has actually reached a
+# working state.  If you move this earlier in the boot, a U41 image that
+# breaks power management would confirm itself before anyone noticed.
+
+[Unit]
+Description=Confirm U41 power-manager firmware after a successful boot
+Documentation=file:///usr/share/doc/u41-ota/README.md
+After=multi-user.target
+Wants=multi-user.target
+ConditionPathExists=/dev/spidev0.0
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+
+# Give the system a moment to settle before declaring the boot good.
+ExecStartPre=/bin/sleep 30
+ExecStart=/usr/bin/u41-ota confirm
+
+# A failure here is not fatal to the boot: it just means the image stays on
+# probation and will be rolled back if it keeps failing, which is the correct
+# conservative outcome.
+SuccessExitStatus=0
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

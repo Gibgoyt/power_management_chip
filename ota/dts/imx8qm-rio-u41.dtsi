@@ -1,0 +1,146 @@
+// SPDX-License-Identifier: GPL-2.0+
+/*
+ * imx8qm-rio-u41.dtsi - PM_SPI link from the i.MX8 SoM to U41 (STM32L051).
+ *
+ * Include this from imx8qm-rio.dts, after the symphony DTSI:
+ *
+ *     #include "imx8qm-rio-u41.dtsi"
+ *
+ *
+ * WHAT THIS BUS IS
+ * ----------------
+ * PM_SPI is the only connection between the SoM and the power-management MCU.
+ * From the RIO v4.04 schematic, verified at copper level against the rendered
+ * sheets (NOT the flattened netlist, which drops cross-sheet ports - see below):
+ *
+ *   - U41 side (pwr_mgmt.SchDoc, page 8): U41A pins 10/11/12/13 = PA4/PA5/PA6/PA7
+ *     are labelled PM_SPI_CS / PM_SPI_SCK / PM_SPI_MISO / PM_SPI_MOSI.  Those pads
+ *     are SPI1_NSS/SCK/MISO/MOSI on the STM32L051 (datasheet Table).
+ *   - SoM side (IMX8 Module.SchDoc, page 3): the SoM's SPI3 bus is bussed to THREE
+ *     slaves off one set of lines:
+ *         SPI3_SCK -> PM_SPI_SCK  + I_SPI_SCL + GNSS_SPI_SCL
+ *         SPI3_SDO -> PM_SPI_MOSI + I_SPI_DI  + GNSS_SPI_DI
+ *         SPI3_SDI -> PM_SPI_MISO + I_SPI_DO  + GNSS_SPI_DO
+ *     Each slave has its OWN GPIO chip select:
+ *         PM_SPI_CS   = GPIO2_IO03 = J5.176   (this MCU)
+ *         GNSS_SPI_CS = GPIO2_IO02 = J5.174
+ *         I_SPI_CS    = J5.52
+ *
+ * SWDIO, SWCLK, MCU_RESET and PM_RESET appear only on the pwr_mgmt sheet, so
+ * Linux cannot reset or SWD-flash U41 - it can only talk to firmware that is
+ * already running.  That is why the U41 firmware is A/B and why an update needs a
+ * physical power cycle.  Full write-up: docs/rio_4.04/OTA-VIABILITY.md.
+ *
+ *
+ * THE LPSPI INSTANCE - now settled (was previously wrong)
+ * -------------------------------------------------------
+ * SoM "SPI3" is the Variscite connector name.  The VAR-SOM-MX8 datasheet pinmux
+ * (Table 3, SOM pins 50-53) maps it to the i.MX8QM controller:
+ *
+ *     SOM 50  DMA.SPI3.CS0  GPIO0_IO27
+ *     SOM 51  DMA.SPI3.SDI  GPIO0_IO26
+ *     SOM 52  DMA.SPI3.SCK  GPIO0_IO24
+ *     SOM 53  DMA.SPI3.SDO  GPIO0_IO25
+ *
+ * DMA.SPI3 == i.MX8QM LPSPI3 == spi@5a030000 == &lpspi3.  (An earlier version of
+ * this file assumed &lpspi1 - that was wrong; lpspi1 is merely what the Variscite
+ * Symphony DTSI happens to define pinctrl for, not where RIO's SPI3 lands.)
+ *
+ * We use a GPIO chip select (PM_SPI_CS on GPIO2_IO03), not the native SPI3.CS0,
+ * because the bus is shared with GNSS and I_SPI.
+ *
+ * See docs/rio_4.04/OTA-VIABILITY.md and docs/stm32l051/u41/README.md.
+ *
+ *
+ * [VERIFY] TWO THINGS TO CONFIRM ON HARDWARE / IN THE KERNEL SOURCE
+ * ----------------------------------------------------------------
+ * 1. Confirm &lpspi3 == spi@5a030000 against the base imx8qm.dtsi "lpspi3:" label
+ *    in the linux-imx source, and empirically: scope J5.52 (SPI3_SCK) while
+ *    running `u41-ota -d /dev/spidev2.0 info` and check the clock appears.
+ * 2. The exact i.MX8QM pad macros below are BEST-EFFORT and marked [VERIFY].
+ *    Read the real tokens from
+ *        arch/arm64/boot/dts/freescale/imx8qm-pinfunc.h
+ *    in linux-imx (grep for SPI3_SCK / SPI3_SDI / SPI3_SDO and for the pad that
+ *    carries LSIO_GPIO2_IO03) and replace the [VERIFY] lines.  A wrong pad macro
+ *    mis-muxes a pad; an empty group just leaves the pad as the bootloader set it.
+ */
+
+&lpspi3 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	fsl,spi-num-chipselects = <1>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpspi3 &pinctrl_u41_cs>;
+
+	/*
+	 * PM_SPI_CS, J5 pin 176 (GPIO2_IO03), active low.
+	 *
+	 * A GPIO chip select rather than the native LPSPI one, because the bus
+	 * is shared with the GNSS receiver (GPIO2_IO02) and the isolated I/O SPI
+	 * (I_SPI_CS).  Only U41 is modelled here for now; when GNSS/I_SPI are
+	 * added as sibling nodes their CS GPIOs must be distinct from this one.
+	 */
+	cs-gpios = <&lsio_gpio2 3 GPIO_ACTIVE_LOW>;
+
+	status = "okay";
+
+	u41: spidev@0 {
+		/*
+		 * "var,spidev" is what the Variscite kernel accepts without
+		 * the "buggy DT: spidev listed directly in DT" warning that
+		 * plain "linux,spidev" produces.  It matches the existing
+		 * spidev node in imx8qm-var-som-symphony.dtsi.
+		 */
+		compatible = "var,spidev";
+		reg = <0>;
+
+		/*
+		 * 1 MHz.  U41 is an SPI slave clocked from the 16 MHz HSI and
+		 * RM0377 caps a slave at f_PCLK/4 = 4 MHz.  1 MHz keeps a wide
+		 * margin, and the transfer rate is not the bottleneck anyway:
+		 * each 64-byte chunk costs about 4 ms in the STM32's flash
+		 * controller, which dwarfs the wire time.
+		 */
+		spi-max-frequency = <1000000>;
+
+		/* Mode 0, MSB first - see firmware/app/spi_slave.c. */
+
+		status = "okay";
+	};
+};
+
+&iomuxc {
+	/*
+	 * [VERIFY] LPSPI3 data/clock pads.
+	 *
+	 * SoM SPI3 = GPIO0_IO24 (SCK) / GPIO0_IO25 (SDO) / GPIO0_IO26 (SDI) per
+	 * the VAR-SOM-MX8 pinmux.  The macro names below follow the usual
+	 * imx8qm-pinfunc.h convention but MUST be confirmed against that header -
+	 * the alternate-function suffix (e.g. _DMA_SPI3_*) and the pad-config
+	 * value differ per board.  Replace each [VERIFY] line with the exact
+	 * token from the kernel source before trusting on hardware.
+	 */
+	pinctrl_lpspi3: lpspi3grp {
+		fsl,pins = <
+			/* [VERIFY: imx8qm-pinfunc.h] IMX8QM_SPI3_SCK_DMA_SPI3_SCK   0x0600004c */
+			/* [VERIFY: imx8qm-pinfunc.h] IMX8QM_SPI3_SDO_DMA_SPI3_SDO   0x0600004c */
+			/* [VERIFY: imx8qm-pinfunc.h] IMX8QM_SPI3_SDI_DMA_SPI3_SDI   0x0600004c */
+		>;
+	};
+
+	/*
+	 * [VERIFY] PM_SPI_CS pad muxed to LSIO_GPIO2_IO03.
+	 *
+	 * Which physical pad carries LSIO_GPIO2_IO03 is NOT determinable from the
+	 * schematic; find it with:
+	 *     grep LSIO_GPIO2_IO03 arch/arm64/boot/dts/freescale/imx8qm-pinfunc.h
+	 * and put that macro here.  Leaving the group empty is safe (the bus
+	 * still works if the bootloader left the pad in GPIO mode); a WRONG macro
+	 * is worse than empty, so only fill this in once confirmed.
+	 */
+	pinctrl_u41_cs: u41csgrp {
+		fsl,pins = <
+			/* [VERIFY: imx8qm-pinfunc.h] IMX8QM_<PAD>_LSIO_GPIO2_IO03   0x00000021 */
+		>;
+	};
+};
